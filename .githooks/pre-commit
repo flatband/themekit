@@ -1,0 +1,4 @@
+#!/bin/sh
+# Every commit is a new version: bump the patch number and include it in the
+# commit, so the version never has to be edited by hand.
+npm version patch --no-git-tag-version >/dev/null && git add package.json package-lock.json

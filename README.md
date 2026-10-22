@@ -90,3 +90,12 @@ there's only ever one copy of each.
 - `InitialTheme.tsx`: runs once per page load and applies the `?theme=` override or the daily pick.
 - `pick.ts`: the pure decision behind it (`pickInitialTheme`), plus `today()`.
 - `useTheme.ts`: the hydration-safe hook for pickers.
+
+## Versioning
+
+The version bumps itself: a pre-commit hook in `.githooks/` runs
+`npm version patch` on every commit (0.1.0 → 0.1.1 → 0.1.2 …), so it never
+needs editing by hand. `npm install` in this folder switches the hook on
+(through the `prepare` script). For a bigger jump, set the version yourself
+before committing, e.g. `npm version minor --no-git-tag-version`; the hook
+then bumps from there.

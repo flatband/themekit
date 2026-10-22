@@ -1,6 +1,6 @@
 {
   "name": "themekit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Headless named-theme switching for Next.js, with an optional daily random pick",
   "type": "module",
   "exports": {
@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "build": "tsc",
-    "prepare": "npm run build",
+    "prepare": "git config core.hooksPath .githooks 2>/dev/null; npm run build",
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
