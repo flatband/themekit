@@ -1,0 +1,25 @@
+{
+  "name": "themekit",
+  "version": "0.1.0",
+  "description": "Headless named-theme switching for Next.js, with an optional daily random pick",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "next-themes": ">=0.4",
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^19",
+    "next-themes": "^0.4.6",
+    "react": "^19",
+    "typescript": "^5"
+  }
+}
