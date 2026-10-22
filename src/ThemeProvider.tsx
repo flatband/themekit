@@ -1,7 +1,7 @@
 "use client";
 
 import { ThemeProvider as NextThemesProvider, type Attribute } from "next-themes";
-import InitialTheme from "./InitialTheme";
+import InitialTheme from "./InitialTheme.js";
 
 export type ThemeProviderProps = {
   /** Every theme name. The first is the default unless `defaultTheme` says otherwise. */

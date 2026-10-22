@@ -15,16 +15,12 @@ to the app.
 npm install github:flatband/themekit
 ```
 
-Pin a version with a tag: `npm install github:flatband/themekit#v0.1.0`.
-For local development, `npm install ../themekit` links the folder directly.
+Your lockfile pins the commit you installed; run the same command again to pick
+up newer pushes.
 
-The package ships TypeScript source, not built JS. In a Next.js app, let Next
-compile it:
-
-```ts
-// next.config.ts
-const nextConfig = { transpilePackages: ["themekit"] };
-```
+It compiles itself on install: npm runs the `prepare` script after cloning,
+which builds `src/` into plain JavaScript in `dist/`. No bundler config needed
+in the app.
 
 `react` and `next-themes` are peer dependencies — the app installs them, so
 there's only ever one copy of each.

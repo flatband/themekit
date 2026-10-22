@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import { useTheme } from "next-themes";
-import { pickInitialTheme, today } from "./pick";
+import { pickInitialTheme, today } from "./pick.js";
 
 /**
  * Applies the starting theme once per page load: the ?theme= override and,
